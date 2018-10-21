@@ -1,4 +1,4 @@
-require_relative 'controller.rb'
+require 'controller'
 
 class Router
   def initialize
@@ -14,7 +14,7 @@ class Router
       params = gets.chomp.to_i
       case params
       when 1
-        puts "Tu as choisi de créer un gossip" 
+        puts "Tu as choisi de créer un gossip"
         @controller.create_gossip
       when 4
         puts "À bientôt !"
@@ -25,5 +25,3 @@ class Router
     end
   end
 end
-potin1 = Router.new
-potin1.perform
